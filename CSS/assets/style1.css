@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9;
+    background-image: url('CSS/assets/images/ict.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+    
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    flex-direction: column;
+    
+}
+
+nav{
+    background: #0044;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+.apply{
+    background: #0044cc;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #0044cc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2px;
+    margin: 0;
+}
+
+.apply a{
+    text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.apply:hover{
+    background: #002a80;
+    transform: scale(1.2);
+
+}
+
+.hero{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    background-image: url('CSS/assets/images/ict.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.hero p{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    background: #0044;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    margin-bottom: 160px;
+    margin-top: 30px;
+}
+
+.btn:hover{
+    background: #c70039;
+}
+
+.about{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.about h2{
+    font-size: 28px;
+    color: #0044cc;
+    margin-top: 15px;
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.gallery{
+    max-width: 700px;
+    text-align: center;
+    align-items: left;
+    margin-bottom: 80px;
+}
+
+.gallery h2{
+    margin: 50px auto;
+    font-size: 30px;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: auto;
+    border-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover{
+    transform: scale(1.05);
+}
+
+.blog{
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.blog h2{
+    font-size: 30px;
+    color: #0044cc;
+    text-align: center;
+}
+
+.blog article{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.blog article h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.blog article p{
+    font-size: 20px;
+}
+
+
+
+.contact{
+    max-width: 500px;
+    margin: 50px auto;
+    align-items: center;
+    padding: 25px;
+}
+
+.contact h2{
+    font-size: 30px;
+    color: #0044cc;
+    margin-bottom: 30px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form labbel{
+    font-size: 20px;
+
+}
+
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact form button{
+    background: #0044cc;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+
+}
+
+.contact form button:hover{
+    background: #002a80;
+}
+
+.location
+.location{
+    background: #c70039;
+    padding: 12px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 160px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.location a{
+    text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.location:hover{
+    background: #002a80;
+    transform: scale
+
+}
+
+.admission{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admission h2{
+    color: #0044cc;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.admission p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.admission form{
+    display: flex;
+    flex-direction: column;
+}
+
+.admission form label{
+    font-weight: bold;
+    margin: 10px 0 5px;
+    align-items: left;
+    text-align: left;
+}
+
+.admission form input,
+.admission form select,
+.admission form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admission form button{
+    background: #0044cc;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admission form button:hover{
+    background: #002a80;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
