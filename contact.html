@@ -11,33 +11,44 @@
     <header>
         <nav>
             <div class="logo">ICA</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <li><a href="#">About</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About Us</a>
+                            <a href="ourteam.html">Our Team</a>
+                            <a href="location.html">Our Location</a>
+                        </div>
+                    </li>
+
+                </li>
+
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            
             <button class="apply"><a href="admissions.html">Apply Now</a></button>
         </nav>
     </header>
 
 
     <section class="contact">
-    <h2>Contact Us</h2>
-    <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    </section>
+            <h2>Contact Us</h2>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 
-    <section class="location">
-        <button class="location"><a href="location.html">Our Location</a></button>
+        <button class="btn"><a href="location.html">Our Location</a></button>
+        
     </section>
 
     <footer>

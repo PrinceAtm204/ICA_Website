@@ -57,6 +57,39 @@ nav ul li a{
 nav ul li a:hover{
     color: yellow;
 }
+.nav-links li{
+    position: relative;
+}
+
+.dropdown-content{
+    align-items: center;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    top: 30px;
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a{
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover{
+    background: #ff7700;
+    color: white;
+}
+
+.nav-links li:hover .dropdown-content{
+display: block;
+}
 
 .apply{
     background: #0044cc;
@@ -84,33 +117,43 @@ nav ul li a:hover{
 
 }
 
-.hero{
-    margin-top: 60px;
+#hero{
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 400px;
-    background-image: url('CSS/assets/images/ict.jpg');
+    background-image: url('images/Study-group.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
 }
 
-.hero h1{
+#hero h1{
+    color: white;
     font-size: 50px;
     margin-bottom: 50px;
-    margin-top: 60px;
+    margin-top: 50px;
+    padding: 10px;
 }
 
-.hero p{
+#hero .school{
+color: white;
+margin-top: 10px;
+}
+
+#hero p{
+    color: white;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .btn{
-    background: #0044;
+    background: blue;
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -263,12 +306,12 @@ nav ul li a:hover{
     background: #002a80;
 }
 
-.location
+/* .location
 .location{
     background: #c70039;
-    padding: 12px 25px;
-    font-size: 20px;
-    text-decoration: none;
+    /* padding: 12px 25px; */
+    /* font-size: 20px; */
+    /* text-decoration: none;
     display: inline-block;
     margin-bottom: 160px;
     margin-top: 30px;
@@ -278,6 +321,44 @@ nav ul li a:hover{
     transition: 0.3s;
     padding: 2px;
     margin: 0;
+    text-align: center; */
+    /* color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+} */
+
+
+.location a{
+    /* text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s;
+    color: white;
+    text-align: center; */
+}
+
+/* .location:hover{
+    background: #002a80;
+}  */
+
+
+/* .location
+.location{
+    margin-left: 45%;
+    background: #c70039;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    align-items: center;
     text-align: center;
 }
 
@@ -287,12 +368,28 @@ nav ul li a:hover{
     transition: 0.3s;
     color: white;
     text-align: center;
+    align-items: center;
+} */
+
+.location a:hover{
+    /* background: #0044cc; */
+}
+
+.location{
+    background: #0044;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    margin-bottom: 160px;
+    margin-top: 30px;
 }
 
 .location:hover{
-    background: #002a80;
-    transform: scale
-
+    background: #c70039;
 }
 
 .admission{
