@@ -40,6 +40,12 @@ nav{
 nav .logo{
     font-size: 50px;
     font-weight: bold;
+    color: white;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
 }
 
 nav ul{
@@ -193,8 +199,9 @@ margin-top: 10px;
     line-height: 1.8;
 }
 
+Gallery
 .gallery{
-    max-width: 700px;
+    /* max-width: 700px; */
     text-align: center;
     align-items: left;
     margin-bottom: 80px;
@@ -205,6 +212,79 @@ margin-top: 10px;
     font-size: 30px;
     color: #0044cc;
     margin-bottom: 20px;
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.gallery-item{
+    width: 300px;
+    height: 200px;
+    overflow:;
+    border-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    }
+
+    /* "View More" Styling for the Last Image */
+.view-more {
+    cursor: pointer;
+    }
+
+.view-more a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    
+    }
+
+.view-more .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    }
+    
+.view-more:hover .overlay {
+opacity: 1;
+
+}
+
+    /* width: 300px;
+    height: 200px;
+    border-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s; */
+
+/* #images{
+    display: flex;
+
 }
 
 .gallery-grid{
@@ -224,7 +304,7 @@ margin-top: 10px;
 
 .gallery-grid img:hover{
     transform: scale(1.05);
-}
+} */
 
 .blog{
     max-width: 800px;
@@ -467,11 +547,15 @@ footer{
     margin-bottom: 0;
 }
 
+#cont{
+    display: flex;
+    flex-direction: column;
+}
 
 .team {
     text-align: center;
     padding: 40px 20px;
-    background: #f9f9f9;
+    background: ;
 
 }
 
@@ -488,12 +572,14 @@ team p {
 
 }
 
-team-container {
+/* team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
+    border: 1px solid red;
+    
+} */
 
 .team-member {
     background: white;
@@ -502,6 +588,7 @@ team-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
+    min-width: 250px;
     transition: transform 0.3s ease-in-out;
 
 }
@@ -511,6 +598,14 @@ team-member img {
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.staff{
+    border: 1px solid orangered;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    border-block:
 }
 
 .team-member h3 {
@@ -538,3 +633,12 @@ team-member img {
     .team-member:hover {
     transform: translateY(-5px);
     }
+
+    .cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    
