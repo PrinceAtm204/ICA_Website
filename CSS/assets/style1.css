@@ -181,7 +181,7 @@ margin-top: 10px;
 }
 
 .about{
-    max-width: 800px;
+    max-width: 100%;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
@@ -721,4 +721,135 @@ opacity: 1;
     gap: 20px;
     }
 
+
+/* Smooth Scrolling Effect
+
+html {
+    scroll-behavior: smooth;
     
+}
+    
+/* Section Styling */
+/* section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+} */
+    
+/* Unique Backgrounds for Each Section */
+    
+/* #mission-vision {
+    background-color: #e3f2fd; /* Light Blue 
+    
+} */
+    
+/* #core-values { 
+    background-color: #fbe9e7; /* Light Coral 
+    
+} */
+    
+/* #why-choose-us {
+    background-color: #e8f5e9; /* Light Green 
+    
+} */
+    
+/* Navigation Bar */
+/* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+        
+}
+        
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+        
+}
+        
+nav ul li a:hover {
+
+        color: #ff9800;
+        
+} */
+
+/* .one{
+    background-color: #e3f2fd; Light Blue
+}
+
+.two{
+    background-color: #fbe9e7; Light coral
+}
+
+.three{
+    background-color: #e8f5e9; Light Green
+} */
+
+/* About Us Internal Navigation */
+
+.about-nav {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    
+}
+    
+.about-nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    transition: color 0.3s ease-in-out;
+    
+}
+    
+.about-nav a:hover {
+    color: #ff9800;
+    
+}
+    
+/* Section Styling */
+    
+section { 
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Unique Backgrounds for Sections */
+
+#mission-vision {
+
+    background-color: #e3f2fd; /* Light Blue */
+    
+}
+    
+#core-values {
+    
+    background-color: #fbe9e7; /* Light Coral */
+    
+}
+    
+#why-choose-us {
+    
+    background-color: #e8f5e9; /* Light Green */
+    
+}
