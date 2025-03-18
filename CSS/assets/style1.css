@@ -29,12 +29,14 @@ main{
 }
 
 nav{
+    position: relative;
     background: #0044;
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
 nav .logo{
@@ -341,7 +343,7 @@ opacity: 1;
 
 
 
-.contact{
+/* .contact{
     max-width: 500px;
     margin: 50px auto;
     align-items: center;
@@ -389,7 +391,7 @@ opacity: 1;
 
 .contact form button:hover{
     background: #002a80;
-}
+} */
 
 /* .location
 .location{
@@ -539,8 +541,9 @@ opacity: 1;
 
 
 footer{
+    width: 100%;
     text-align: center;
-    padding: 25px;
+    padding: 25px 0;
     background: #222;
     color: white;
     margin-top: 60px;
@@ -799,57 +802,440 @@ nav ul li a:hover {
 
 /* About Us Internal Navigation */
 
-.about-nav {
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    
-}
-    
-.about-nav a{
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px;
-    transition: color 0.3s ease-in-out;
-    
-}
-    
-.about-nav a:hover {
-    color: #ff9800;
-    
-}
-    
-/* Section Styling */
-    
-section { 
-    padding: 50px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
+NEW CONTACT
+/* Contact Page Layout */
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
-
-/* Unique Backgrounds for Sections */
-
-#mission-vision {
-
-    background-color: #e3f2fd; /* Light Blue */
-    
 }
     
-#core-values {
+/* Left Section: Contact Information */
     
-    background-color: #fbe9e7; /* Light Coral */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+    text-align: left;
     
 }
     
-#why-choose-us {
+.contact-info h2, .contact-info h3 {
+    color: #333;
     
-    background-color: #e8f5e9; /* Light Green */
+}
+    
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    
+}
+    
+/* Social Media Links */
+.social-media {
+    list-style: none;
+    padding: 0;
+    
+}
+    
+.social-media li {
+    margin: 10px 0;
+    
+}
+
+.social-media a {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease-in-out;
+        
+}
+
+.facebook { background: #1877F2; }
+
+.twitter { background: #1DA1F2; }
+        
+.instagram { background: #E1306C; }
+        
+.linkedin { background: #007785;}
+        
+.social-media a:hover {     
+    opacity: 0.8;
+        
+}
+        
+/* Right Section: Contact Form */   
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    text-align: left;
+        
+}
+        
+.contact-form h2 {
+    color: #333;
+        
+}
+        
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+        
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+
+}
+
+.contact-form button {
+background: #ff9800;
+color: white;
+padding: 12px 18px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+
+}
+
+.contact-form button:hover {
+background: #e68900;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.contact-container {
+flex-direction: column;
+text-align: center;
+
+}
+
+.contact-info, .contact-form {
+max-width: 100%;
+text-align: center;
+
+}
+}
+
+/* .hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height 
+    overflow: hidden;
+    /* background-size: cover;
+    background-position: center;
+    animation: changeBg 16s infinite linear; /* 16s * cycle for 4 images
+
+}
+
+/* Overlay for Better Text Visibility 
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.slideshow-container{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: slideBg 20s infinite ease-in-out;
+
+}
+
+.slide{
+    min-width: 33.33%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Assign Images 
+.slide:nth-child(1), .slide:nth-child(4)  { background-image: url('images/Study-group.jpg'); }
+
+.slide:nth-child(2), .slide:nth-child(5) { background-image: url('images/Student.jpg'); }
+
+.slide:nth-child(3), .slide:nth-child(6) { background-image: url('images/Std1.jpg'); }
+
+/* Slide Animation 
+@keyframes slideBg {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Loop back 
+
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+
+.overlay {
+    width: 80%;
+    font-size: 14px;
+
+}
+} */
+
+
+
+/*Responsive Design
+@media (max-width: 768px) {
+    .overlay {
+    width: 80%;
+    font-size: 14px;
+
+}
+}
+
+ @keyframes changeBg {
+    0% {background-image: url('images/block.jpg'); }
+    25% {background-image: url('images/Study-group.jpg'); }
+    50% { background-image: url('images/Student.jpg'); }
+    75% {background-image: url('images/Study-group.jpg'); }
+    100% { background-image: url('images/Bus.webp'); } 
+
+}
+
+Responsive Design
+ @media (max-width: 768px) {
+    .overlay {
+    width: 80%;
+    font-size: 14px; 
+
+}
+} */
+
+/* Ensure the hero section fills the full viewport
+
+height */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    z-index: 1;
+    /* display: flex;
+    align-items: center;    
+    justify-content: center; */
+    
+}
+    
+/* Slideshow Container */    
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    /* display: flex; */
+    
+}
+    
+/* Background Images */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* animation: slideAnimation 20s infinite; */
+    
+}
+
+/* Assign Images with Delayed Start */
+.slide:nth-child(1) {
+    background-image: url('images/Study-group.jpg'); 
+    opacity: 1;   
+    /* animation-delay: 0s; */
+    
+}
+    
+.slide:nth-child(2) {
+    background-image: url('images/Student.jpg');    
+    /* animation-delay: 10s; */
+    
+}
+    
+.slide:nth-child(3) {
+    background-image: url('images/Std1.jpg');    
+    /* animation-delay: 10s; */
+    
+}
+
+/* Slide Animation */
+@keyframes slideAnimation {
+    0% { opacity: 1; transform: translateX(0); } /* Start off-screen */
+    30% {opacity: 1; transform: translateX(0); } /* Slide in */
+    40% { opacity: 0; transform: translateX(-100%); } /* Stay visible */
+    /* 50% { opacity: 0; transform: translateX(-100%); }  Slide out  */
+    100% { opacity: 0; transform: translateX(-100%); } /* Reset position */
+    
+}
+
+/*Assign Animation delayss*/
+.slide:nth-child(1) {animation: slideAnimation 12s infinite;}
+    
+.slide:nth-child(2) {animation: slideAnimation 12s infinite 4s;}
+    
+.slide:nth-child(3) {animation: slideAnimation 12s infinite 8s;}
+    
+
+/* Full-Page Overlay for Text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    
+}
+
+/* Welcome Text Styling */
+.overlay h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: white;    
+    margin-bottom: 10px;
+    
+}
+
+
+.overlay h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;    
+    margin-bottom: 25px;
+    margin-top: 30px;
+    
+}
+    
+.overlay p {
+    font-size: 1.5rem;    
+    color: white;
+    margin-bottom: 25px;
+    
+}
+    
+/* Responsive Design */    
+@media (max-width: 768px) {
+    
+.overlay h1 {
+    font-size: 2rem;
+    
+}
+    
+.overlay p {
+    font-size: 1.2rem;
+    
+}
+
+}
+
+/* 404 Page Styling */
+
+.error-container {
+    text-align: center;
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9; /* Light background */
+    
+}
+    
+.error-container h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #dc3545; /* Red color for error */
+    margin-bottom: 10px;
+    animation: popln 0.5s ease-in-out;
+    
+}
+    
+.error-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+    
+.error-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    
+    }
+    /* Back to Home Button */
+
+.home-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    
+}
+    
+.home-button:hover {
+    background: #0056b3;
+    
+}
+    
+ /* Animation */
+@keyframes popin {
+from {
+    transform: scale(0.8);
+    opacity: 0;
+    
+    }
+    
+    to {
+    transform: scale(1);
+    opacity: 1;
+    
+    }
     
 }
