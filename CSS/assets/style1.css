@@ -14,6 +14,7 @@ body{
     color: #333;
     line-height: 1.6;
     min-height: 100%;
+    padding-top: 80px;
     
 
 }
@@ -29,14 +30,18 @@ main{
 }
 
 nav{
-    position: relative;
-    background: #0044;
+    position: fixed;
+    background: brown;
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 nav .logo{
@@ -155,7 +160,7 @@ transition: 10ms;
 
 #hero .school{
 color: white;
-margin-top: 10px;
+margin-top: 20px;
 }
 
 #hero p{
@@ -166,6 +171,8 @@ margin-top: 10px;
 }
 
 .btn{
+    align-items: center;
+    text-align: center;
     background: blue;
     color: white;
     padding: 12px 25px;
@@ -175,7 +182,7 @@ margin-top: 10px;
     display: inline-block;
     transition: 0.3s;
     margin-bottom: 160px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .btn:hover{
@@ -256,7 +263,7 @@ Gallery
     
     }
 
-.view-more .overlay {
+.view-more .overlay-g {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -273,7 +280,7 @@ Gallery
     transition: opacity 0.3s ease-in-out;
     }
     
-.view-more:hover .overlay {
+.view-more:hover .overlay-g {
 opacity: 1;
 
 }
@@ -1076,10 +1083,12 @@ Responsive Design
 
 height */
 
+
+    HERO/*
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full height of the viewport */
+    height: 100%; /* Full height of the viewport *
     overflow: hidden;
     /* z-index: 1; */
     /* display: flex;
@@ -1088,97 +1097,181 @@ height */
     
 }
     
-/* Slideshow Container */    
+/* Slideshow Container *    
 .slideshow-container {
     position: absolute;
     width: 300%;
     height: 100%;    
-    display: flex;
+    /* display: flex;
     animation: slideShow 30s infinite linear;
-    
+     */
 }
     
-/* Background Images */
+/* Background Images *
 .slide {
-    /* position: absolute; */
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    /* transition: opacity 1s ease-in-out; */
-    /*opacity: 0; 
-    animation: slideAnimation 30s infinite; */
+    /* flex-shrink: 0; *
+    transition: opacity 2s ease-in-out; *
+    opacity: 0; 
+    animation: slideShow 30s infinite;
     
 }
 
-/* Assign Images with Delayed Start */
+/* Assign Images with Delayed Start *
 .slide:nth-child(1) {
     background-image: url('images/Study-group.jpg'); 
-    /* opacity: 1;    
-    animation-delay: 0s;*/
+    /* opacity: 1; *    
+    animation-delay: 0s;
     
 }
     
 .slide:nth-child(2) {
     background-image: url('images/Student.jpg');    
-    /* animation-delay: 10s; */
+    animation-delay: 10s; 
     
 }
     
 .slide:nth-child(3) {
     background-image: url('images/Std1.jpg');    
-    /* animation-delay: 20s; */
+    animation-delay: 20s;
     
 }
 
-/* Slide Animation */
+/* Slide Animation *
 @keyframes slideAnimation {
-    0%, 30% {transform: translateX(0%); } /* Start off-screen */
-    33%, 63% {transform: translateX(-100%); } /* Slide in */
-    66%, 96% {transform: translateX(-200%); } /* Slide in *
+    0% {transform: translateX(0%); } /* Start off-screen *
+    33.33% {transform: translateX(0%); } /* Slide in *
+    36% {transform: translateX(-100%); } /* Slide in *
     66.66% {transform: translateX(-100%); } /* Stay visible *
-    66.67% {transform: translateX(-200%); } /* Stay visible */
-    100% {transform: translateX(0%); } /* Reset position */
+    69% {transform: translateX(-200%); } /* Stay visible *
+    100% {transform: translateX(-200%); } /* Reset position *
     
+} /*
+
+ @keyframes fade {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    34% {opacity: 0;}
+    66% {opacity: 0;}
+    67% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
+    /*
+    0% {opacity: 1; transform: translateX(100%); } /* Slide in *
+    10% {opacity: 1; transform: translateX(0); } /* Slide in *
+    30% { opacity: 0; transform: translateX(0); } /* Stay visible *
+    /* 40% { opacity: 0; transform: translateX(-100%); }  Slide out  *
+    100% { opacity: 0; transform: translateX(-100%); } /* Reset position *
+    
+}*
 
-/* @keyframes slideAnimation {
+
+@keyframes slideAnimation {
     0% {opacity: 0; transform: translateX(100%); } /* Start off-screen *
     10% {opacity: 1; transform: translateX(0); } /* Slide in *
     30% {opacity: 1; transform: translateX(0); } /* Slide in *
     40% { opacity: 0; transform: translateX(-100%); } /* Stay visible *
-    /* 50% { opacity: 0; transform: translateX(-100%); }  Slide out  *
-    100% { opacity: 0; transform: translateX(-200%); } /* Reset position *
-    
-}*/
-
-
-/*Assign Animation delayss*/
-.slide:nth-child(1) {animation: slideAnimation 12s infinite;}
-    
-.slide:nth-child(2) {animation: slideAnimation 12s infinite 4s;}
-    
-.slide:nth-child(3) {animation: slideAnimation 12s infinite 8s;}
-    
-
-/* Full-Page Overlay for Text */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
+    /*50% { opacity: 0; transform: translateX(-100%); }  /*Slide out  *
+    100% { opacity: 0; transform: translateX(-100%); } /* Reset position *
     
 }
+
+
+/*Assign Animation delayss*
+.slide:nth-child(1) {animation: fade 30s infinite;}
+    
+.slide:nth-child(2) {animation: fade 30s infinite 10s;}
+    
+.slide:nth-child(3) {animation: fade 30s infinite 20s;}
+    
+
+/* Full-Page Overlay for Text *
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    /* height: 100%;*
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*
+    text-align: center;
+    /* z-index: 2; *
+    padding: 30px; 
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    max-width: 100%;
+    
+} 
+
+
+/* Home Section Fullscreen */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 30s infinite;
+}
+
+/* Keyframes for Smooth Image Transitions */
+@keyframes slideShow {
+    0% { background-image: url('image1.jpg'); }
+    30% { background-image: url('image1.jpg'); } /* Stay visible for 10s */
+    33.3% { background-image: url('image2.jpg'); }
+    63.3% { background-image: url('image2.jpg'); } /* Stay visible for 10s */
+    66.6% { background-image: url('image3.jpg'); }
+    96.6% { background-image: url('image3.jpg'); } /* Stay visible for 10s */
+    100% { background-image: url('image1.jpg'); }
+}
+
+/* Styling for Welcome Text */
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.home-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.home-text .btn:hover {
+    background: #e64a19;
+}
+
 
 /* Welcome Text Styling */
 .overlay h3 {
@@ -1186,6 +1279,8 @@ height */
     font-weight: normal;
     color: white;    
     margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
     
 }
 
@@ -1196,6 +1291,7 @@ height */
     color: white;    
     margin-bottom: 25px;
     margin-top: 30px;
+    text-align: center;
     
 }
     
@@ -1203,6 +1299,7 @@ height */
     font-size: 1.5rem;    
     color: white;
     margin-bottom: 25px;
+    text-align: center;
     
 }
     
@@ -1216,13 +1313,142 @@ height */
     
 .overlay p {
     font-size: 1.2rem;
+    text-align: center;
     
 }
 
 }
 
-/* 404 Page Styling */
+.overlay .motto{
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+HERO
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Hero Section */
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Slides */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideShow 30s infinite;
+}
+
+/* Set Background Images */
+.slide:nth-child(1) {
+    background-image: url('images/Study-group.jpg');
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    background-image: url('images/Student.jpg');
+    animation-delay: 10s;
+}
+.slide:nth-child(3) {
+    background-image: url('images/Std1.jpg');
+    animation-delay: 20s;
+}
+
+/* Keyframe Animation */
+@keyframes slideShow {
+    0% { opacity: 0; transform: translateX(100%); }  /* Start Offscreen */
+    10% { opacity: 1; transform: translateX(0); }    /* Fully Visible */
+    30% { opacity: 1; transform: translateX(0); }    /* Hold for 10s */
+    40% { opacity: 0; transform: translateX(-100%); } /* Move Left */
+    100% { opacity: 0; transform: translateX(-100%); } /* Stay Offscreen */
+}
+
+/* Overlay with Welcome Text */
+
+.overlay {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100;
+    color: white;
+    margin-top: 10PX;
+    margin-bottom: 0;
+    height: 100vh;
+    max-height: 100%;
+}
+
+/* Text Styling *
+.overlay .come{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.overlay .school {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.overlay .motto {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* .overlay .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.overlay .btn:hover {
+    background: #e64a19;
+} */
+
+/* Footer Fix *
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+
+
+/* 404 Page Styling */
 .error-container {
     text-align: center;
     padding: 50px;
