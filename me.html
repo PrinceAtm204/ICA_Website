@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .testimonial-container {
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            width: 400%; /* 4 testimonials */
+            animation: slide 60s linear infinite; /* 15s per testimonial */
+        }
+
+        .testimonial {
+            flex: 1 0 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .testimonial blockquote {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .testimonial cite {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #007bff;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Active dot animation (CSS only) */
+        .testimonial-slider:nth-child(1) ~ .dots .dot:nth-child(1),
+        .testimonial-slider:nth-child(2) ~ .dots .dot:nth-child(2),
+        .testimonial-slider:nth-child(3) ~ .dots .dot:nth-child(3),
+        .testimonial-slider:nth-child(4) ~ .dots .dot:nth-child(4) {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="testimonial-container">
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="John Doe">
+            <blockquote>"I am so happy for the staff, teachers and the management of Ivory International... and we pray that it continues and grows into a greater and greater institution."</blockquote>
+            <cite>Mr. Kasule John, Parent</cite>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Jane Smith">
+            <blockquote>"The school has provided excellent resources and support for my child's learning. The teachers are very dedicated and caring."</blockquote>
+            <cite>Mrs. Jane Smith, Parent</cite>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="David Lee">
+            <blockquote>"I appreciate the school's focus on holistic development. My child has not only excelled academically but also grown as an individual."</blockquote>
+            <cite>Mr. David Lee, Parent</cite>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Emily White">
+            <blockquote>"The community at Ivory International is very welcoming and supportive. I feel like my child is in a safe and nurturing environment."</blockquote>
+            <cite>Ms. Emily White, Parent</cite>
+        </div>
+    </div>
+    <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+</body>
+</html>

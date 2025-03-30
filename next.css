@@ -1,0 +1,78 @@
+.testimonial-container {
+    position: relative;
+    width: 60%;
+    margin: 50px auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial-slide {
+    display: flex;
+    width: 500%; /* 5 slides */
+    animation: slide 200s linear infinite;
+}
+
+.testimonial {
+    width: 20%; /* Each slide takes 20% of the full width */
+    flex: 0 0 auto;
+    padding: 20px;
+    transition: opacity 0.5s;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.dot.active {
+    background: yellow;
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-20%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); }
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); }
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(-80%); }
+}
+
+/* Active Dot Timing */
+@keyframes dots {
+    0%, 20% { background: yellow; opacity: 1; }
+    25%, 45% { background: #ccc; opacity: 0.5; }
+    50%, 70% { background: yellow; opacity: 1; }
+    75%, 95% { background: #ccc; opacity: 0.5; }
+    100% { background: yellow; opacity: 1; }
+}
+
+.dot:nth-child(1) { animation: dots 200s linear infinite; }
+.dot:nth-child(2) { animation: dots 200s linear infinite 50s; }
+.dot:nth-child(3) { animation: dots 200s linear infinite 100s; }
+.dot:nth-child(4) { animation: dots 200s linear infinite 150s; }
+.dot:nth-child(5) { animation: dots 200s linear infinite 200s; }
