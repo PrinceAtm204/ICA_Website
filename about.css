@@ -1,8 +1,8 @@
-html{
+/*html{
     scroll-behavior: smooth;
 }
 
-/* General Page Styling */
+/* General Page Styling *
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 }
 
-/* Navigation Bar */
+/* Navigation Bar *
 nav ul {
     list-style: none;
     display: flex;
@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu *
 dropdown-menu {
     display: none;
     position: absolute;
@@ -100,7 +100,7 @@ dropdown-menu {
     
 }
     
-/* Section Styling */
+/* Section Styling *
     
 section { 
     padding: 50px 20px;
@@ -112,27 +112,27 @@ section {
     
 }
 
-/* Unique Backgrounds for Sections */
+/* Unique Backgrounds for Sections *
 
 #mission-vision {
 
-    background-color: #e3f2fd; /* Light Blue */
+    background-color: #e3f2fd; /* Light Blue *
     
 }
     
 #core-values {
     
-    background-color: #fbe9e7; /* Light Coral */
+    background-color: #fbe9e7; /* Light Coral *
     
 }
     
 #why-choose-us {
     
-    background-color: #e8f5e9; /* Light Green */
+    background-color: #e8f5e9; /* Light Green *
     
 }
 
-/* Back to Top Button */
+/* Back to Top Button *
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -155,4 +155,144 @@ back-to-top:hover {
 }
 .back-to-top a{
     text-decoration: none;
+}*/
+
+/* Internal Navigation for About Us Sections */
+
+
+/* Main Navigation Bar */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5E1780; /* Deep Purple */
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main-nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #2B1E4D; /* Darker shade for hover effect */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5E1780;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.apply a {
+    background-color: #2B1E4D;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.apply a:hover {
+    background-color: #1A112E;
+}
+
+/* Internal Navigation for About Us Sections */
+.about-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 60px; /* Adjust based on main nav height */
+    z-index: 999;
+    background-color: white;
+}
+
+.about-nav li {
+    display: inline;
+}
+
+.about-nav a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.about-nav a:hover {
+    background: #2B1E4D;
+    border-radius: 5px;
+}
+
+.about-nav a:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    margin: 50px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Padding to Prevent Overlap */
+body {
+    padding-top: 80px; /* Adjust based on main nav height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#history p{
+    margin-right: 150px;
 }

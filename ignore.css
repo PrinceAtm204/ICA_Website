@@ -1,0 +1,678 @@
+/* #hero{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    background-image: url('images/Study-group.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+} */
+
+
+
+/* width: 300px;
+    height: 200px;
+    border-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s; */
+
+/* #images{
+    display: flex;
+
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: auto;
+    border-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover{
+    transform: scale(1.05);
+} */
+
+/* .location
+.location{
+    background: #c70039;
+    padding: 12px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 160px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+} 
+
+
+.location a{
+    text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.location:hover{
+    background: #002a80;
+}
+
+
+.location
+.location{
+    margin-left: 45%;
+    background: #c70039;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.location a {
+    text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.location a:hover{
+     background: #0044cc; 
+}
+
+.location{
+    background: #0044;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    margin-bottom: 160px;
+    margin-top: 30px;
+}
+
+.location:hover{
+    background: #c70039;
+} */
+
+/* 
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #222;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 10;
+} */
+
+/* team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid red;
+    
+} */
+
+
+/* "See More" Last Team Member
+see-more {
+position: relative;
+cursor: pointer;
+}
+
+see-more a {
+display: block;
+position: relative;
+text-decoration: none;
+
+}
+
+.see-more .overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+color: white;
+font-size: 22px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+
+}
+
+see-more:hover .overlay {
+opacity: 1;
+
+} */
+
+
+/* Smooth Scrolling Effect
+
+html {
+    scroll-behavior: smooth;
+    
+}
+    
+/* Section Styling */
+/* section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+} */
+    
+/* Unique Backgrounds for Each Section */
+    
+/* #mission-vision {
+    background-color: #e3f2fd; /* Light Blue 
+    
+} */
+    
+/* #core-values { 
+    background-color: #fbe9e7; /* Light Coral 
+    
+} */
+    
+/* #why-choose-us {
+    background-color: #e8f5e9; /* Light Green 
+    
+} */
+    
+/* Navigation Bar */
+/* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+        
+}
+        
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+        
+}
+        
+nav ul li a:hover {
+
+        color: #ff9800;
+        
+} */
+
+/* .one{
+    background-color: #e3f2fd; Light Blue
+}
+
+.two{
+    background-color: #fbe9e7; Light coral
+}
+
+.three{
+    background-color: #e8f5e9; Light Green
+} */
+
+/* About Us Internal Navigation */
+
+NEW CONTACT
+/* Contact Page Layout *
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+/* Left Section: Contact Information *
+    
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+    text-align: left;
+    
+}
+    
+.contact-info h2, .contact-info h3 {
+    color: #333;
+    
+}
+    
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    
+}
+    
+/* Social Media Links *
+.social-media {
+    list-style: none;
+    padding: 0;
+    
+}
+    
+.social-media li {
+    margin: 10px 0;
+    
+}
+
+.social-media a {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease-in-out;
+        
+}
+
+.facebook { background: #1877F2; }
+
+.twitter { background: #1DA1F2; }
+        
+.instagram { background: #E1306C; }
+        
+.linkedin { background: #007785;}
+        
+.social-media a:hover {     
+    opacity: 0.8;
+        
+}
+        
+/* Right Section: Contact Form *
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    text-align: left;
+        
+}
+        
+.contact-form h2 {
+    color: #333;
+        
+}
+        
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+        
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+
+}
+
+.contact-form button {
+background: #ff9800;
+color: white;
+padding: 12px 18px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+
+}
+
+.contact-form button:hover {
+background: #e68900;
+
+}
+
+/* Responsive Design *
+@media (max-width: 768px) {
+.contact-container {
+flex-direction: column;
+text-align: center;
+
+}
+
+.contact-info, .contact-form {
+max-width: 100%;
+text-align: center;
+
+}
+}
+
+/* .hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height 
+    overflow: hidden;
+    /* background-size: cover;
+    background-position: center;
+    animation: changeBg 16s infinite linear; /* 16s * cycle for 4 images
+
+}
+
+/* Overlay for Better Text Visibility 
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.slideshow-container{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: slideBg 20s infinite ease-in-out;
+
+}
+
+.slide{
+    min-width: 33.33%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Assign Images 
+.slide:nth-child(1), .slide:nth-child(4)  { background-image: url('images/Study-group.jpg'); }
+
+.slide:nth-child(2), .slide:nth-child(5) { background-image: url('images/Student.jpg'); }
+
+.slide:nth-child(3), .slide:nth-child(6) { background-image: url('images/Std1.jpg'); }
+
+/* Slide Animation 
+@keyframes slideBg {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Loop back 
+
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+
+.overlay {
+    width: 80%;
+    font-size: 14px;
+
+}
+} */
+
+
+
+/*Responsive Design
+@media (max-width: 768px) {
+    .overlay {
+    width: 80%;
+    font-size: 14px;
+
+}
+}
+
+ @keyframes changeBg {
+    0% {background-image: url('images/block.jpg'); }
+    25% {background-image: url('images/Study-group.jpg'); }
+    50% { background-image: url('images/Student.jpg'); }
+    75% {background-image: url('images/Study-group.jpg'); }
+    100% { background-image: url('images/Bus.webp'); } 
+
+}
+
+Responsive Design
+ @media (max-width: 768px) {
+    .overlay {
+    width: 80%;
+    font-size: 14px; 
+
+}
+} */
+
+/* Ensure the hero section fills the full viewport
+
+height */
+
+
+    HERO/*
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Full height of the viewport *
+    overflow: hidden;
+    /* z-index: 1; */
+    /* display: flex;
+    align-items: center;    
+    justify-content: center; *
+    
+}
+    
+/* Slideshow Container *    
+.slideshow-container {
+    position: absolute;
+    width: 300%;
+    height: 100%;    
+    /* display: flex;
+    animation: slideShow 30s infinite linear;
+     *
+}
+    
+/* Background Images *
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* flex-shrink: 0; *
+    transition: opacity 2s ease-in-out; *
+    opacity: 0; 
+    animation: slideShow 30s infinite;
+    
+}
+
+/* Assign Images with Delayed Start *
+.slide:nth-child(1) {
+    background-image: url('images/Study-group.jpg'); 
+    /* opacity: 1; *    
+    animation-delay: 0s;
+    
+}
+    
+.slide:nth-child(2) {
+    background-image: url('images/Student.jpg');    
+    animation-delay: 10s; 
+    
+}
+    
+.slide:nth-child(3) {
+    background-image: url('images/Std1.jpg');    
+    animation-delay: 20s;
+    
+}
+
+/* Slide Animation *
+@keyframes slideAnimation {
+    0% {transform: translateX(0%); } /* Start off-screen *
+    33.33% {transform: translateX(0%); } /* Slide in *
+    36% {transform: translateX(-100%); } /* Slide in *
+    66.66% {transform: translateX(-100%); } /* Stay visible *
+    69% {transform: translateX(-200%); } /* Stay visible *
+    100% {transform: translateX(-200%); } /* Reset position *
+    
+} /*
+
+ @keyframes fade {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    34% {opacity: 0;}
+    66% {opacity: 0;}
+    67% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+    /*
+    0% {opacity: 1; transform: translateX(100%); } /* Slide in *
+    10% {opacity: 1; transform: translateX(0); } /* Slide in *
+    30% { opacity: 0; transform: translateX(0); } /* Stay visible *
+    /* 40% { opacity: 0; transform: translateX(-100%); }  Slide out  *
+    100% { opacity: 0; transform: translateX(-100%); } /* Reset position *
+    
+}*
+
+
+@keyframes slideAnimation {
+    0% {opacity: 0; transform: translateX(100%); } /* Start off-screen *
+    10% {opacity: 1; transform: translateX(0); } /* Slide in *
+    30% {opacity: 1; transform: translateX(0); } /* Slide in *
+    40% { opacity: 0; transform: translateX(-100%); } /* Stay visible *
+    /*50% { opacity: 0; transform: translateX(-100%); }  /*Slide out  *
+    100% { opacity: 0; transform: translateX(-100%); } /* Reset position *
+    
+}
+
+
+/*Assign Animation delayss*
+.slide:nth-child(1) {animation: fade 30s infinite;}
+    
+.slide:nth-child(2) {animation: fade 30s infinite 10s;}
+    
+.slide:nth-child(3) {animation: fade 30s infinite 20s;}
+    
+
+/* Full-Page Overlay for Text *
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    /* height: 100%;*
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*
+    text-align: center;
+    /* z-index: 2; *
+    padding: 30px; 
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    max-width: 100%;
+    
+}
+
+/* Text Styling *
+.overlay .come{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.overlay .school {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.overlay .motto {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* .overlay .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.overlay .btn:hover {
+    background: #e64a19;
+} */
+
+/* Footer Fix *
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+} 
+*/

@@ -1,0 +1,112 @@
+/* General Reset */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #012a57;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+/* Header Main */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+/* Logo and School Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.school-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B0000; /* Adjust color as needed */
+}
+
+.contact-info {
+    font-size: 16px;
+}
+
+.header-buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.apply {
+    background: #ffc107;
+    color: black;
+}
+
+.webmail {
+    background: gray;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    background: #012a57;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-menu .dropdown-menu {
+    position: absolute;
+    background: #003366;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-menu .dropdown-menu li {
+    width: 100%;
+}
+
+.nav-menu .dropdown-menu a {
+    padding: 10px;
+}
