@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #0044cc;
+    --secondary-color: #002a80;
+    --text-color: #333;
+    --background-color: #f8f9;
+    --link-color: blue;
+    --transition-duration: 0.3s;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +24,8 @@ body{
     line-height: 1.6;
     min-height: 100%;
     padding-top: 70px;
-    
+    /* background-color: grey;
+    background-blend-mode: overlay; */
 
 }
 
@@ -98,7 +108,7 @@ nav ul li a:hover{
     color: black;
     padding: 10px 15px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .dropdown-content a:hover{
@@ -107,20 +117,20 @@ nav ul li a:hover{
 }
 
 .nav-links .dropdown:hover .dropdown-content{
-display: block;
-transition: 10ms;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.apply{
+.apply {
     background: #0044cc;
-    padding: 20px;
+    padding: 10px 15px; /* Adjust padding */
     font-size: 15px;
     border: 1px solid #0044cc;
-    border-radius: 0px;
+    border-radius: 5px; /* Rounded edges for a better look */
     cursor: pointer;
     transition: 0.3s;
-    padding: 4px;
-    margin: 0;
 }
 
 .apply a{
@@ -475,6 +485,9 @@ HERO
 
 #testimonial-section{
     width: 100%;
+    margin: 20px, 20px, 20px, 20px;
+    align-items: center;
+    background: url('images/ictlab.jpg') no-repeat center center/cover;
 
 }
 .testimonial-container {
@@ -482,10 +495,22 @@ HERO
     width: 100%;
     margin: 50px auto;
     overflow: hidden;
-    background: url('CSS/assets/images/ictlab.jpg') no-repeat center center/cover;
+    color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    /*background: url('images/ictlab.jpg') no-repeat center center/cover;*/
     color: white;
     padding: 30px;
     border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    opacity: 5;
+}
+
+.testimonial-container h2{
+    font-size: 40px;
+}
+
+.testimonial-container p{
+    margin-right: 0px;
 }
 
 .testimonial-slide {
@@ -498,15 +523,16 @@ HERO
     width: 20%;
     flex: 0 0 auto;
     padding: 20px;
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.8);
     transition: opacity 0.5s, transform 0.5s;
     display: flex;
     align-items: center;
     gap: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Transparent background */
     padding: 20px;
     border-radius: 10px;
+    
+
 }
 
 .testimonial img {
@@ -548,7 +574,7 @@ HERO
 .dots {
     display: flex;
     justify-content: center;
-     margin-top: 500px;
+     margin-top: 150px;
 }
 
 .dot {
@@ -597,6 +623,35 @@ HERO
     font-size: 20px;
     line-height: 1.8;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 10px;
+    
+}
+.box {
+    width: 30%;
+    position: relative;
+}
+.box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.box p, .box ul {
+    font-size: 16px;
+    color: #555;
+}
+.number {
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: -20px;
+}
+
 
 Gallery
 .gallery{
@@ -676,49 +731,95 @@ opacity: 1;
 
 }
 
-.blog{
+.blog {
     max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    margin: 10px auto 25px;
     padding: 20px;
+    background-image: url('CSS/assets/images/ictlab.jpg');
 }
 
-.blog h2{
+.blog h2 {
     font-size: 30px;
-    color: red;
+    color: rgb(26, 15, 15);
     text-align: center;
     margin-top: 10px;
 }
 
-.get{
+.blog h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.blog .more{
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.blog .moree{
+    font-weight: bold;
+    text-align: center;
+    color: skyblue;
+}
+
+.get {
     font-size: 20px;
     margin: 15px;
+    text-align: center;
+}
 
-} 
+.blog-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 25px;
+}
 
-.blog article{
+.blog-article-card {
     background: white;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform var(--transition-duration);
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
 }
 
-.blog article h3{
-    font-size: 25px;
+.article-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover;
     margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.blog-article-card:hover,
+.blog-article-card:focus-within {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .blog-articles {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blog article:hover,
+.blog article:focus-within {
+    transform: translateY(-5px);
+}
+
+.blog article h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
     color: blue;
 }
 
-.blog article p{
-    font-size: 20px;
-}
-
-.link{
-    color: blue;
+.blog article p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
 }
 
 /* Back to Top Button */
@@ -726,7 +827,7 @@ opacity: 1;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #ff9800;
+    background: rgb(115, 115, 250);
     color: white;
     padding: 10px 15px;
     font-size: 14px;
@@ -739,16 +840,38 @@ opacity: 1;
 }
 
 back-to-top:hover {
-    background: #e68900;
+    background: rgb(115, 115, 250);
 
 }
 .back-to-top a{
     text-decoration: none;
 }
 
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.link:hover,
+.link:focus {
+    color: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blog article:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+time{
+    text-align: center;
+}
 
 
- .contact{
+
+
+.contact{
     max-width: 500px;
     margin: 50px auto;
     align-items: center;
@@ -1209,6 +1332,7 @@ from {
 .container {
     flex: 1;
 }
+
 .footer {
     background: #002147;
     color: white;
@@ -1239,10 +1363,11 @@ from {
 .footer-about .footer-logo {
     width: 100px;
     margin-bottom: 10px;
-    margin-left: 130px;
+    margin-left: 60px;
     border: 1px solid #002147;
     border-radius: 100%;
     overflow: hidden;
+    align-items: center;
 }
 
 .social-icons a {
@@ -1253,6 +1378,7 @@ from {
 
 .footer-sitemap h4{
     margin-left: 100px;
+    text-align: left;
 }
 
 .footer-sitemap ul {
@@ -1261,12 +1387,14 @@ from {
 }
 .footer-sitemap ul li {
     margin-bottom: 10px;
+    text-align: left;
 }
 .footer-sitemap ul li a {
     margin-left: 100px;
     color: white;
     text-decoration: none;
 }
+
 .footer-contact p {
     margin-bottom: 10px;
 }
