@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
     min-height: 100%;
     padding-top: 70px;
-    background-color: grey;
+    background-color: #f8f9;
     background-blend-mode: overlay;
 }
 
@@ -166,13 +166,13 @@ nav ul li a:focus {
 .blog .more{
     font-weight: bold;
     text-align: center;
-    color: whitesmoke;
+    color: green;
 }
 
 .blog .moree{
     font-weight: bold;
     text-align: center;
-    color: skyblue;
+    color: grey;
 }
 
 .get {
