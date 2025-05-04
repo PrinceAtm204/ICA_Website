@@ -144,8 +144,10 @@ nav ul li a:hover{
 .apply:hover{
     background: #002a80;
     transform: scale(1.2);
+    font-weight: bold;
 
 }
+
 
 
 
@@ -503,9 +505,11 @@ HERO
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5); /* Transparent background */
     opacity: 5;
+    align-items: center;
 }
 
 .testimonial-container h2{
+    text-align: center;
     font-size: 40px;
 }
 
@@ -540,10 +544,13 @@ HERO
     height: 80px;
     border-radius: 20%;
     border: 3px solid rgb(18, 4, 219);
+    align-items: center;
 }
 
 .text-content {
     flex-grow: 1;
+    align-items: center;
+    text-align: center;
 }
 
 .quote {
@@ -1329,8 +1336,12 @@ from {
 }
 
 
-.container {
+/* .footer-container {
     flex: 1;
+} */
+
+.footer-column{
+    flex: 1 1;
 }
 
 .footer {
@@ -1340,12 +1351,13 @@ from {
     margin-top: auto;
     position: relative;
 }
-.container {
+.footer-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 .footer-content {
     display: flex;
@@ -1353,17 +1365,19 @@ from {
     width: 100%;
     padding-bottom: 20px;
 }
-.footer-about, .footer-sitemap, .footer-contact {
+.footer-about, .footer-links, .footer-contact {
     flex: 1;
     margin: 10px;
 }
 
-
+.footer-about{
+    text-align: center;
+    align-items: center;
+}
 
 .footer-about .footer-logo {
     width: 100px;
     margin-bottom: 10px;
-    margin-left: 60px;
     border: 1px solid #002147;
     border-radius: 100%;
     overflow: hidden;
@@ -1376,31 +1390,53 @@ from {
     font-size: 18px;
 }
 
-.footer-sitemap h4{
+.footer-links h4{
     margin-left: 100px;
-    text-align: left;
+    text-align: center;
 }
 
-.footer-sitemap ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
 }
-.footer-sitemap ul li {
+.footer-links ul li {
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
-.footer-sitemap ul li a {
+.footer-links ul li a {
     margin-left: 100px;
     color: white;
     text-decoration: none;
+
+}
+
+.footer-links a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.footer-contact h4{
+    text-align: center;
 }
 
 .footer-contact p {
     margin-bottom: 10px;
+    text-align: center;
 }
 .footer-contact i {
     margin-right: 8px;
 }
+
+.footer-contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
 .footer-bottom {
     background: #8b0035;
     text-align: center;
@@ -1463,7 +1499,14 @@ from {
 }
 
 /* Hover effect on social media icons */
-.social-icon-1:hover {
-    background-color: #002147;
-    color: #007bff; /* Blue color on hover */
+.social-icon-1 a:hover {
+    color: yellow;
+
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
