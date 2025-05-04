@@ -12,7 +12,36 @@
 
   <body>
     <header>
-      <nav>
+      <!-- <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <nav class="main-nav">
+        <div class="nav-container">
+          <div class="logo"><a href="index.html">ICA</a></div>
+          <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-content">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
+                <li><a href="coming.html">Our Location</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="admissions.html" class="apply-btn">Apply Now</a></li>
+          </ul>
+        </div>
+      </nav> -->
+    
+      
+    
+ <nav>
         <div class="logo"><a href="index.html">ICA</a></div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -32,8 +61,10 @@
         </ul>
         
         <button class="apply"><a href="admissions.html">Apply Now</a></button>
-      </nav>
-    </header>
+</nav>
+
+
+</header>
 
     <section id="hero-section">
       <header class="hero-section">
@@ -56,23 +87,24 @@
 
   <section id="testimonial-section">
     <div class="testimonial-container">
-      <h2><strong>What they say </strong></h2> <br>
+      <h2><strong>What they say about Us</strong></h2> <br>
       <div class="testimonial-slide">
         <div class="testimonial">
-          <img src="CSS/assets/images/male-avatar.jpg" alt="Person 1">
+
           <div class="text-content">
             <p class="quote">&#8220;</p>
+            <img src="CSS/assets/images/male-avatar.jpg" alt="Person 1">
             <h3>Mr. Kasule John</h3>
             <p>Parent</p>
-            <p>I am so happy for the staff, teachers, and management of Irundu Central Academy... and I pray that it grows into a greaterand greater institution.</p>
+            <p>I am so happy for the staff, teachers, and management of Irundu Central Academy... <br> and I pray that it grows into a greaterand greater institution.</p>
 <br>
           </div>
         </div>
 
         <div class="testimonial">
-          <img src="person2.jpg" alt="Person 2">
           <div class="text-content">
             <p class="quote">&#8220;</p>
+            <img src="CSS/assets/images/female.png" alt="Person 2">
             <h3>Sarah Nakintu</h3>
             <p>Guardian</p>
             <p>This school has greatly improved my child’s confidence.</p>
@@ -80,29 +112,29 @@
         </div>
 
         <div class="testimonial">
-                <img src="CSS/assets/images/male-avatar.jpg" alt="Person 3">
-                <div class="text-content">
-                    <p class="quote">&#8220;</p>
-                    <h3>James Mwesigwa</h3>
-                    <p>Alumni</p>
-                    <p>The education here shaped my career for the better.</p>
-                </div>
+          <div class="text-content">
+            <p class="quote">&#8220;</p>   
+            <img src="CSS/assets/images/male-avatar.jpg" alt="Person 3">
+            <h3>Dr. James Mwesigwa</h3>
+            <p>Alumni</p>
+            <p>The education here shaped my career for the better.</p>
+          </div>
         </div>
 
         <div class="testimonial">
-                <img src="person4.jpg" alt="Person 4">
-                <div class="text-content">
-                    <p class="quote">&#8220;</p>
-                    <h3>Prossy Ndagire</h3>
-                    <p>Parent</p>
-                    <p>Teachers are caring and the environment is friendly.</p>
-                </div>
-        </div>
-
-        <div class="testimonial">
-          <img src="CSS/assets/images/male-avatar.jpg" alt="Person 5">
           <div class="text-content">
             <p class="quote">&#8220;</p>
+            <img src="CSS/assets/images/female.png" alt="Person 4">
+            <h3>Prossy Ndagire</h3>
+            <p>Parent</p>
+            <p>Teachers are caring and the environment is friendly.</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="text-content">
+            <p class="quote">&#8220;</p>
+            <img src="CSS/assets/images/male-avatar.jpg" alt="Person 5">
             <h3>Daniel Kato</h3>
             <p>Student</p>
             <p>I love the school activities and how interactive classes are!</p>
@@ -123,11 +155,11 @@
 
   <!-- Footer Section -->
   <footer class="footer">
-    <div class="container">
-        <div class="footer-content">
+    <div class="footer-container">
+        <!-- <div class="footer-column footer-about"> -->
             <!-- Logo and About -->
-            <div class="footer-about">
-              <img src="CSS/assets/images/logo.jpg" alt="Irundu Central Academy Logo" class="footer-logo">
+            <div class="footer-column footer-about">
+              <img src="CSS/assets/images/logo.jpg" alt="Ivory International Schools Logo" class="footer-logo">
               <h3 class="ica">IRUNDU CENTRAL ACADEMY</h3>
               <p class="now">We are part of a growing international movement focusing on developing your child's skills and competencies required for success in this rapidly changing digital society.</p>
               <p class="now">"Strive For Success"</p>
@@ -140,9 +172,10 @@
             </div>
             
             <!-- Sitemap -->
-            <div class="footer-sitemap">
+            <div class="footer-column footer-links">
+              <!-- <div class="footer-sitemap"> -->
               <h4 class="quick">Quick Links</h4>
-              <ul>
+              <ul class="">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="ourteam.html">Our Team</a></li>
@@ -154,11 +187,11 @@
             </div>
             
             <!-- Contact Info -->
-            <div class="footer-contact">
+            <div class="footer-column footer-contact">
               <h4>Contact Us</h4>
               <p><i class="fas fa-map-marker-alt"></i> We are located in Irundu Towncouncil along Nkoone Road 500m away from Irundu Roundabout.</p>
               <p><i class="fas fa-phone"></i>+256 741 106322 <br>  +256 761 633606</p>
-              <p><i class="fas fa-envelope"></i> info@irunducentralacademy.com</p>
+              <p class="con-us"><i class="fas fa-envelope"></i><a href="mailto:info@irunducentralacademy.com">info@irunducentralacademy.com</a></p>
             </div>
         </div>
     </div>
